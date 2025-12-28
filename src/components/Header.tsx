@@ -257,7 +257,7 @@ const Header = () => {
     <>
       <Navbar $scrolled={isScrolled}>
         <Logo>
-          <a href="https://esu.osut.org/">
+          <a href="/">
             <img src="/assets/images/Logo-uri/ESU_logo_header.png" alt="ESU Logo" />
           </a>
         </Logo>
@@ -277,11 +277,7 @@ const Header = () => {
               <i className="fab fa-tiktok"></i>
             </a>
           </li>
-          <li>
-            <HeaderButton href="/assets/documente/Liste finale.pdf" target="_blank" rel="noopener noreferrer">
-              Liste finale
-            </HeaderButton>
-          </li>
+          
         </NavLinks>
       </Navbar>
 
