@@ -54,57 +54,6 @@ const MainWrap = styled.main`
   margin: 0;
   padding: 0;
 `;
-
-// Liste Finale Section
-const CeESU = styled.section`
-  max-width: 70%;
-  margin: 60px auto 0 auto;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  padding: 0 20px;
-`;
-
-const CeESUTitle = styled.h2`
-  color: #fac82d;
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-bottom: 3vh;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-
-  @media (max-width: 767px) { font-size: 1.6rem; }
-  @media (min-width: 768px) and (max-width: 950px) { font-size: 1.8rem; }
-  @media (min-width: 951px) and (max-width: 1500px) { font-size: 2.1rem; }
-`;
-
-const CustomFaqLinkButton = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(145deg, #094b9c, #052d6a);
-  color: #fff;
-  font-size: 2.2rem;
-  font-weight: 600;
-  height: 8vh;
-  padding: 0 5vw;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: background 0.6s, color 0.5s, box-shadow 0.5s, transform 0.4s;
-  font-family: 'Poppins', sans-serif;
-  width: fit-content;
-  margin: 4vh auto;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.2);
-
-  &:hover {
-    background: linear-gradient(145deg, #fac82d, #f7b800);
-    color: #073B7F;
-    box-shadow: 0 12px 28px rgba(0,0,0,0.35), 0 6px 12px rgba(0,0,0,0.2);
-    transform: translateY(-2px);
-  }
-
-  @media (max-width: 767px) { font-size: 1.6rem; height: 7.5vh; }
-  @media (max-width: 950px) { font-size: 1.8rem; height: 8vh; }
-`;
-
 // FAQ Section
 const FaqSection = styled.section`
   background: #fff;

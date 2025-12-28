@@ -81,29 +81,6 @@ const NavLinks = styled.ul`
   }
 `;
 
-const HeaderButton = styled.a`
-  background: #ffffff;
-  color: #073B7F !important;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  padding: 6px 16px;
-  font-size: 1rem;
-  border-radius: 30px;
-  transition: background 0.6s ease, color 0.4s ease, transform 0.2s ease, box-shadow 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  height: 30px;
-  line-height: 1;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  &:hover {
-    background-color: #fac82d;
-    color: #073B7F !important;
-    transform: translateY(-1px);
-  }
-`;
-
 const MenuButton = styled.div`
   cursor: pointer;
   position: fixed;
