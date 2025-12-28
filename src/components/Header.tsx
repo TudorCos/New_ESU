@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import styled, { css, keyframes } from "styled-components";
 
 // Animations
@@ -244,12 +245,12 @@ const Header = () => {
   };
 
   const navLinks = [
-    { href: "https://esu.osut.org/", label: "Acasă" },
-    { href: "https://esu.osut.org/about/", label: "Despre noi" },
-    { href: "https://esu.osut.org/echipa/", label: "Echipa" },
-    { href: "https://esu.osut.org/esu2025/", label: "ESU 2025" },
-    { href: "https://esu.osut.org/faq-esu/", label: "FAQ" },
-    { href: "https://osutcluj.pixieset.com/engineeringsummeruniversity2024/", label: "Galerie" },
+    { href: "/", label: "Acasă", external: false },
+    { href: "/about", label: "Despre noi", external: false },
+    { href: "/echipa", label: "Echipa", external: false },
+    { href: "/esu2025", label: "ESU 2025", external: false },
+    { href: "/faq", label: "FAQ", external: false },
+    { href: "https://osutcluj.pixieset.com/engineeringsummeruniversity2024/", label: "Galerie", external: true },
   ];
 
   return (
@@ -292,14 +293,29 @@ const Header = () => {
 
       <Sidenav $isOpen={isOpen}>
         {navLinks.map((link, index) => (
-          <SidenavLink
-            key={link.href}
-            href={link.href}
-            $isOpen={isOpen}
-            $index={index}
-          >
-            <b>{link.label}</b>
-          </SidenavLink>
+          link.external ? (
+            <SidenavLink
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              $isOpen={isOpen}
+              $index={index}
+            >
+              <b>{link.label}</b>
+            </SidenavLink>
+          ) : (
+            <SidenavLink
+              key={link.href}
+              as={Link}
+              to={link.href}
+              $isOpen={isOpen}
+              $index={index}
+              onClick={() => setIsOpen(false)}
+            >
+              <b>{link.label}</b>
+            </SidenavLink>
+          )
         ))}
         <SidenavInscriere
           href="/assets/documente/Liste finale.pdf"

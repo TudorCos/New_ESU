@@ -110,7 +110,7 @@ const FooterBottom = styled.div`
 `;
 
 const FooterContact = styled.div`
-  padding-bottom: 40px;
+  padding-bottom: 5px;
   text-align: justify;
 
   b {
@@ -122,6 +122,12 @@ const FooterContact = styled.div`
     text-align: center;
     margin-left: 0px;
     font-size: 130%;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin: 8px 0;
+    line-height: 1.6;
   }
 
   a {

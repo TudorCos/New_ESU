@@ -113,6 +113,13 @@ const Photo = styled.div`
   border-radius: 50%;
   margin-bottom: 30px;
   overflow: hidden;
+  background: linear-gradient(145deg, #1a5fb4, #0d3a73);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fac82d;
+  font-size: 3rem;
+  font-weight: bold;
 
   img {
     width: 100%;
